@@ -1,0 +1,123 @@
+# ============================
+# Travis Sneaker Drop Notifier
+# Root .gitignore
+# ============================
+
+# ===== BACKEND (Node.js) =====
+# Node modules
+travis_back/node_modules/
+node_modules/
+
+# Environment variables
+travis_back/.env
+travis_back/.env.local
+travis_back/.env.*.local
+.env
+.env.local
+.env.*.local
+
+# Firebase credentials
+travis_back/firebase-key.json
+travis_back/service-account.json
+**/firebase-key.json
+**/service-account.json
+
+# Application state files
+travis_back/last_state.txt
+travis_back/*.log
+
+# Package manager logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ===== FRONTEND (Flutter) =====
+# Miscellaneous
+*.class
+*.log
+*.pyc
+*.swp
+.DS_Store
+.atom/
+.buildlog/
+.history
+.svn/
+.swiftpm/
+migrate_working_dir/
+
+# IntelliJ related
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# VS Code (optional)
+.vscode/
+
+# Flutter/Dart/Pub related
+**/doc/api/
+**/ios/Flutter/.last_build_id
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
+travis_alarm/build/
+build/
+coverage/
+
+# Symbolication related
+app.*.symbols
+
+# Obfuscation related
+app.*.map.json
+
+# Android Studio build artifacts
+**/android/app/debug
+**/android/app/profile
+**/android/app/release
+**/android/.gradle/
+**/android/captures/
+**/android/local.properties
+**/android/key.properties
+
+# iOS build artifacts
+**/ios/Pods/
+**/ios/.symlinks/
+**/ios/Flutter/Flutter.framework
+**/ios/Flutter/Flutter.podspec
+**/ios/ServiceDefinitions.json
+**/ios/Runner/GeneratedPluginRegistrant.*
+
+# ===== FIREBASE SENSITIVE FILES =====
+# Android Firebase config
+travis_alarm/android/app/google-services.json
+**/android/app/google-services.json
+
+# iOS Firebase config
+travis_alarm/ios/Runner/GoogleService-Info.plist
+**/ios/Runner/GoogleService-Info.plist
+**/ios/firebase_app_id_file.json
+
+# Flutter Firebase options
+travis_alarm/lib/firebase_options.dart
+**/lib/firebase_options.dart
+
+# Firebase project config
+firebase.json
+.firebaserc
+.firebase/
+
+# ===== API KEYS & SECRETS =====
+**/apikeys.dart
+**/secrets.dart
+**/credentials.json
+*.pem
+*.p12
+*.key
+
+# ===== SYSTEM FILES =====
+Thumbs.db
+desktop.ini
+
