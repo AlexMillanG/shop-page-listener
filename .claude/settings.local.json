@@ -1,7 +1,12 @@
 {
   "permissions": {
     "allow": [
-      "Bash(README_EN.md)"
+      "Bash(README_EN.md)",
+      "Bash(git add:*)",
+      "Bash(git push:*)",
+      "Bash(cat:*)",
+      "Bash(README_temp.md)",
+      "Bash(README_EN_temp.md)"
     ],
     "deny": [],
     "ask": []
