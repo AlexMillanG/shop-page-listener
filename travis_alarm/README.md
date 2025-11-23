@@ -37,7 +37,7 @@ El objetivo principal es alertar a los usuarios inmediatamente cuando se lanzan 
 
 ## Estructura del Proyecto
 
-```
+```plaintext
 travis_alarm/
 ├── lib/
 │   ├── main.dart              # Punto de entrada de la aplicacion
